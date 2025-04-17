@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Teknik Servis gizlilik sözleşmesi. Kişisel verilerinizin nasıl işlendiği ve korunduğu hakkında bilgi edinin.">
     <title>Gizlilik Sözleşmesi | Teknik Servis</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
 </head>
 <body>
     <!-- Sticky Telefon Numarası -->
-    <div class="sticky-phone">
-        <a href="tel:+905551234567">
-            <i class="fas fa-phone-alt"></i> +90 555 123 4567
+    <div class="sticky-phone mobile-centered">
+        <a href="tel:+905551234567" aria-label="Hemen ara">
+            <i class="fas fa-phone-alt" aria-hidden="true"></i> +90 555 123 4567
         </a>
     </div>
 
@@ -25,20 +25,23 @@
         <div class="container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="img/logo.png" alt="Teknik Servis Logo">
+                    <img src="img/logo.webp" alt="Teknik Servis Logo" width="150" height="50">
                 </a>
             </div>
             <nav>
-                <div class="hamburger">
+                <div class="hamburger" aria-label="Menüyü aç" role="button" tabindex="0">
                     <div class="line"></div>
                     <div class="line"></div>
                     <div class="line"></div>
                 </div>
                 <ul class="nav-links">
+                    <div class="close-menu" aria-label="Menüyü kapat" role="button" tabindex="0">
+                        <i class="fas fa-times" aria-hidden="true"></i>
+                    </div>
                     <li><a href="index.html">Ana Sayfa</a></li>
                     <li><a href="hakkimizda.html">Hakkımızda</a></li>
                     <li class="dropdown">
-                        <a href="javascript:void(0)">Hizmetler</a>
+                        <a href="javascript:void(0)" tabindex="0">Hizmetler</a>
                         <div class="dropdown-content">
                             <a href="hizmetler/beyaz-esya.html">Beyaz Eşya</a>
                             <a href="hizmetler/buzdolabi.html">Buzdolabı</a>
@@ -69,67 +72,103 @@
     </section>
 
     <!-- Gizlilik Sözleşmesi İçeriği -->
-    <section class="privacy-content">
+    <section class="policy-content">
         <div class="container">
-            <div class="content-box">
-                <h2>Gizlilik Sözleşmesi</h2>
-                <p>Son güncellenme: 01.06.2023</p>
+            <div class="policy-container">
+                <h2 class="policy-title">Gizlilik Sözleşmesi</h2>
                 
-                <h3>1. Giriş</h3>
-                <p>Teknik Servis olarak, müşterilerimizin gizliliğine saygı duyuyor ve kişisel verilerinizin korunmasına önem veriyoruz. Bu Gizlilik Sözleşmesi, web sitemizi ziyaret ettiğinizde veya hizmetlerimizi kullandığınızda kişisel verilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklamaktadır.</p>
+                <p class="policy-date">Son güncellenme: 01.06.2023</p>
                 
-                <h3>2. Toplanan Bilgiler</h3>
-                <p>Hizmetlerimizi kullanırken veya web sitemizi ziyaret ederken, aşağıdaki bilgileri toplayabiliriz:</p>
-                <ul>
-                    <li>Ad, soyad, telefon numarası, e-posta adresi ve adres gibi iletişim bilgileri</li>
-                    <li>Servis talebinizle ilgili cihaz bilgileri (marka, model, arıza türü vb.)</li>
-                    <li>Web sitemizi ziyaret ettiğinizde otomatik olarak toplanan bilgiler (IP adresi, tarayıcı türü, ziyaret tarihi ve saati vb.)</li>
-                    <li>Çerezler aracılığıyla toplanan bilgiler</li>
-                </ul>
+                <div class="policy-section">
+                    <h3 class="policy-subtitle">Özet</h3>
+                    <p>Bu sözleşme, Teknik Servis olarak müşterilerimizin gizliliğine saygı duyduğumuzu ve kişisel verilerinizin korunmasına önem verdiğimizi belirtmektedir. Web sitemizi ziyaret ettiğinizde veya hizmetlerimizi kullandığınızda kişisel verilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklamaktadır.</p>
+                </div>
                 
-                <h3>3. Bilgilerin Kullanımı</h3>
-                <p>Topladığımız bilgileri aşağıdaki amaçlar için kullanabiliriz:</p>
-                <ul>
-                    <li>Servis hizmetlerimizi sunmak ve yönetmek</li>
-                    <li>Müşteri hizmetleri sağlamak ve müşteri ilişkilerini yönetmek</li>
-                    <li>Web sitemizi ve hizmetlerimizi geliştirmek</li>
-                    <li>Yasal yükümlülüklerimizi yerine getirmek</li>
-                    <li>Sizinle iletişim kurmak ve bilgilendirmek</li>
-                </ul>
+                <div class="policy-section">
+                    <h3 class="policy-subtitle">1. Veri Sorumlusu</h3>
+                    <p>Teknik Servis olarak, kişisel verilerinizin işlenmesinde "Veri Sorumlusu" sıfatıyla hareket etmekteyiz.</p>
+                    <p><strong>İletişim Bilgileri:</strong><br>
+                    Adres: Atatürk Caddesi No:123, Şişli<br>
+                    Telefon: +90 555 123 4567<br>
+                    E-posta: info@teknikservis.com</p>
+                </div>
                 
-                <h3>4. Bilgilerin Paylaşımı</h3>
-                <p>Kişisel verilerinizi, aşağıdaki durumlar dışında üçüncü taraflarla paylaşmayız:</p>
-                <ul>
-                    <li>Yasal bir zorunluluk olduğunda (mahkeme kararı, yasal süreç vb.)</li>
-                    <li>Hizmetlerimizi sunmak için iş ortaklarımızla (örneğin, kargo şirketleri)</li>
-                    <li>Açık rızanız olduğunda</li>
-                </ul>
+                <div class="policy-section">
+                    <h3 class="policy-subtitle">2. Toplanan Kişisel Veriler</h3>
+                    <p>Hizmetlerimizi kullanırken aşağıdaki kişisel verilerinizi toplayabiliriz:</p>
+                    <ul class="policy-list">
+                        <li>Kimlik Bilgileri: Ad, soyad</li>
+                        <li>İletişim Bilgileri: Telefon numarası, e-posta adresi, adres</li>
+                        <li>Müşteri İşlem Bilgileri: Servis talepleri, şikayet ve talepler</li>
+                        <li>Cihaz Bilgileri: Servis için getirilen cihazların marka, model, seri numarası</li>
+                    </ul>
+                </div>
                 
-                <h3>5. Veri Güvenliği</h3>
-                <p>Kişisel verilerinizin güvenliğini sağlamak için uygun teknik ve organizasyonel önlemler alıyoruz. Ancak, internet üzerinden veri iletiminin %100 güvenli olmadığını unutmayın.</p>
+                <div class="policy-section">
+                    <h3 class="policy-subtitle">3. Kişisel Verilerin İşlenme Amaçları</h3>
+                    <p>Kişisel verilerinizi aşağıdaki amaçlar doğrultusunda işlemekteyiz:</p>
+                    <ul class="policy-list">
+                        <li>Servis hizmetlerimizin sunulması ve yönetilmesi</li>
+                        <li>Müşteri ilişkilerinin yürütülmesi</li>
+                        <li>Talep ve şikayetlerin takibi ve çözümlenmesi</li>
+                        <li>Yasal yükümlülüklerimizin yerine getirilmesi</li>
+                        <li>Hizmet kalitemizin artırılması</li>
+                    </ul>
+                </div>
                 
-                <h3>6. Çerezler</h3>
-                <p>Web sitemiz, deneyiminizi geliştirmek için çerezleri kullanmaktadır. Çerezler hakkında daha fazla bilgi için <a href="kvkk-cerez-politikasi.html">Çerez Politikamızı</a> inceleyebilirsiniz.</p>
+                <div class="policy-section">
+                    <h3 class="policy-subtitle">4. Kişisel Verilerin Aktarılması</h3>
+                    <p>Kişisel verileriniz, aşağıdaki durumlarda üçüncü taraflara aktarılabilir:</p>
+                    <ul class="policy-list">
+                        <li>Yasal zorunluluk halinde yetkili kamu kurum ve kuruluşlarına</li>
+                        <li>Hizmet sağlayıcılarımıza (örneğin, kargo şirketleri)</li>
+                        <li>İş ortaklarımıza (örneğin, yedek parça tedarikçileri)</li>
+                    </ul>
+                    <p>Kişisel verileriniz, açık rızanız olmaksızın yurt dışına aktarılmamaktadır.</p>
+                </div>
                 
-                <h3>7. Haklarınız</h3>
-                <p>Kişisel verilerinizle ilgili olarak aşağıdaki haklara sahipsiniz:</p>
-                <ul>
-                    <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
-                    <li>Kişisel verileriniz işlenmişse buna ilişkin bilgi talep etme</li>
-                    <li>Kişisel verilerinizin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme</li>
-                    <li>Yurt içinde veya yurt dışında kişisel verilerinizin aktarıldığı üçüncü kişileri bilme</li>
-                    <li>Kişisel verilerinizin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme</li>
-                    <li>Kişisel verilerinizin silinmesini veya yok edilmesini isteme</li>
-                </ul>
+                <div class="policy-section">
+                    <h3 class="policy-subtitle">5. Kişisel Verilerin Korunması</h3>
+                    <p>Kişisel verilerinizin güvenliğini sağlamak için teknik ve idari tedbirler almaktayız. Bu tedbirler şunları içerir:</p>
+                    <ul class="policy-list">
+                        <li>Veri erişim kontrolü ve yetkilendirme</li>
+                        <li>Veri şifreleme ve güvenlik duvarları</li>
+                        <li>Düzenli güvenlik değerlendirmeleri</li>
+                        <li>Çalışanlarımıza veri güvenliği eğitimleri</li>
+                    </ul>
+                </div>
                 
-                <h3>8. İletişim</h3>
-                <p>Bu Gizlilik Sözleşmesi ile ilgili sorularınız veya talepleriniz için aşağıdaki iletişim bilgilerini kullanabilirsiniz:</p>
-                <p>E-posta: <a href="mailto:info@teknikservis.com">info@teknikservis.com</a></p>
-                <p>Telefon: <a href="tel:+905551234567">+90 555 123 4567</a></p>
-                <p>Adres: Atatürk Caddesi No:123, Şişli / İstanbul</p>
+                <div class="policy-section">
+                    <h3 class="policy-subtitle">6. Kişisel Veri Sahibinin Hakları</h3>
+                    <p>KVKK'nın 11. maddesi uyarınca, kişisel veri sahibi olarak aşağıdaki haklara sahipsiniz:</p>
+                    <ul class="policy-list">
+                        <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+                        <li>Kişisel verileriniz işlenmişse buna ilişkin bilgi talep etme</li>
+                        <li>Kişisel verilerinizin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme</li>
+                        <li>Yurt içinde veya yurt dışında kişisel verilerinizin aktarıldığı üçüncü kişileri bilme</li>
+                        <li>Kişisel verilerinizin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme</li>
+                        <li>KVKK'da öngörülen şartlar çerçevesinde kişisel verilerinizin silinmesini veya yok edilmesini isteme</li>
+                        <li>Kişisel verilerinizin düzeltilmesi, silinmesi ya da yok edilmesi halinde bu işlemlerin kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme</li>
+                        <li>İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme</li>
+                        <li>Kişisel verilerinizin kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme</li>
+                    </ul>
+                </div>
                 
-                <h3>9. Değişiklikler</h3>
-                <p>Bu Gizlilik Sözleşmesini zaman zaman güncelleyebiliriz. Güncellemeler web sitemizde yayınlanacak ve önemli değişiklikler olması durumunda sizi bilgilendireceğiz.</p>
+                <div class="policy-section">
+                    <h3 class="policy-subtitle">7. Başvuru Yöntemi</h3>
+                    <p>Yukarıda belirtilen haklarınızı kullanmak için aşağıdaki yöntemlerle başvurabilirsiniz:</p>
+                    <ul class="policy-list">
+                        <li>E-posta: info@teknikservis.com</li>
+                        <li>Posta: Atatürk Caddesi No:123, Şişli</li>
+                        <li>Şahsen başvuru: Şirket merkezimize kimliğinizi ibraz ederek</li>
+                    </ul>
+                    <p>Başvurunuz en geç 30 gün içinde sonuçlandırılacaktır.</p>
+                </div>
+                
+                <div class="policy-section">
+                    <h3 class="policy-subtitle">8. Politika Değişiklikleri</h3>
+                    <p>Bu politikayı zaman zaman güncelleyebiliriz. Güncellemeler web sitemizde yayınlanacak ve önemli değişiklikler olması durumunda sizi bilgilendireceğiz.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -139,13 +178,13 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <img src="img/logo-white.png" alt="Teknik Servis Logo" class="footer-logo">
+                    <img src="img/logo-white.webp" alt="Teknik Servis Logo" class="footer-logo" width="150" height="40">
                     <p>Teknik Servis olarak 10 yılı aşkın süredir beyaz eşya, klima, kombi ve televizyon tamir hizmetleri sunmaktayız. Profesyonel ekibimiz ve hızlı servisimiz ile her zaman yanınızdayız.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="footer-links">
@@ -172,9 +211,9 @@
                 </div>
                 <div class="footer-contact">
                     <h3>İletişim</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Atatürk Caddesi No:123, Şişli / İstanbul</p>
-                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+905551234567">+90 555 123 4567</a></p>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@teknikservis.com">info@teknikservis.com</a></p>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Atatürk Caddesi No:123, Şişli</p>
+                    <p><i class="fas fa-phone-alt" aria-hidden="true"></i> <a href="tel:+905551234567">+90 555 123 4567</a></p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:info@teknikservis.com">info@teknikservis.com</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -183,6 +222,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js" defer></script>
 </body>
 </html>
