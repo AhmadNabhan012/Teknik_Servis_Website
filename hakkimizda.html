@@ -12,6 +12,56 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
+    <style>
+        .stats-banner {
+            background-color: var(--primary-color);
+            padding: 3rem 0;
+            margin: 3rem 0;
+            color: white;
+            width: 100%;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-text {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        @media (max-width: 992px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Sticky Telefon Numarası -->
@@ -81,27 +131,27 @@
                 <p>Firmamız, müşteri memnuniyetini ön planda tutarak, hızlı, güvenilir ve ekonomik çözümler sunmaktadır. 7/24 hizmet anlayışımız ile acil durumlarda da yanınızdayız.</p>
                 <p>Teknik servis ekibimiz, sürekli eğitimlerle bilgi ve becerilerini güncel tutmakta, en son teknolojik gelişmeleri takip etmektedir. Bu sayede, her türlü arızaya hızlı ve kalıcı çözümler üretebilmekteyiz.</p>
             </div>
-            <div class="stats-banner">
-                <div class="container">
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-text">Yıllık Tecrübe</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">20+</span>
-                            <span class="stat-text">Uzman Teknisyen</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">849+</span>
-                            <span class="stat-text">Memnun Müşteri</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">5000+</span>
-                            <span class="stat-text">Tamamlanan İş</span>
-                        </div>
-                    </div>
-                </div>
+        </div>
+    </section>
+
+    <!-- İstatistikler -->
+    <section class="stats-banner">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-text">Yıllık Tecrübe</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">20+</span>
+                <span class="stat-text">Uzman Teknisyen</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">849+</span>
+                <span class="stat-text">Memnun Müşteri</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">5000+</span>
+                <span class="stat-text">Tamamlanan İş</span>
             </div>
         </div>
     </section>
